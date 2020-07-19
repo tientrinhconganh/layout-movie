@@ -62,143 +62,106 @@
                 <li data-target="#carousel" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel" data-slide-to="1"></li>
                 <li data-target="#carousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://www.galaxycine.vn/media/2020/7/14/2048x682_1594712582225.jpg"
+                    <img src="./images/dinhmusuong_carousel.png"
                         class="d-block w-100" alt="...">
-                    <!-- <div class="carousel-item__overlay"></div> -->
-                    <!-- <div class="carousel-item__caption container text-white">
-                    <span class="title">ACTION, ADVENTURE, FANTASY</span>
-                    <h1 class="display-4">End of the World: Part I</h1>
-                    <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum.</p>
-                    <div class="carousel-item__trailer mt-4">
-                        <span class="mr-2 text-whitex d-inline-block text-center rounded-circle">PG</span>
-                        <button class="btn-orange">
-                            <i class="fa fa-play mr-2"></i>
-                            PLAY TRAILER
-                        </button>
-                    </div>
-                </div> -->
                 </div>
                 <div class="carousel-item">
-                    <img src="https://www.galaxycine.vn/media/2020/7/14/2048x682_1594709746407.jpg"
+                    <img src="./images/tantichquyam_carousel.jpg"
                         class="d-block w-100" alt="...">
-                    <!-- <div class="carousel-item__overlay"></div>
-                <div class="carousel-item__caption container text-white">
-                    <span class="title">ACTION,ADVENTURE,FANTASY</span>
-                    <h1 class="display-4">End of the World: Part I</h1>
-                    <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum.</p>
-                    <div class="carousel-item__trailer mt-4">
-                        <span class="mr-2 text-whitex d-inline-block text-center rounded-circle">PG</span>
-                        <button class="btn-orange">
-                            <i class="fa fa-play mr-2"></i>
-                            PLAY TRAILER
-                        </button>
-                    </div>
-                </div> -->
                 </div>
                 <div class="carousel-item">
-                    <img src="https://www.galaxycine.vn/media/2020/7/10/2048x682_1594349170282.jpg"
+                    <img src="./images/thansam_carousel.png"
                         class="d-block w-100" alt="...">
-                    <!-- <div class="carousel-item__overlay"></div>
-                <div class="carousel-item__caption container text-white">
-                    <span class="title">ACTION,ADVENTURE,FANTASY</span>
-                    <h1 class="display-4">End of the World: Part I</h1>
-                    <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum.</p>
-                    <div class="carousel-item__trailer mt-4">
-                        <span class="mr-2 text-whitex d-inline-block text-center rounded-circle">PG</span>
-                        <button class="btn-orange">
-                            <i class="fa fa-play mr-2"></i>
-                            PLAY TRAILER
-                        </button>
-                    </div>
-                </div> -->
                 </div>
+                <div class="carousel-item">
+                    <img src="./images/thansam_carousel.png"
+                        class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+        <div id="homeTools" class="hideOnMobile my-4">
+            <div class="w30p widthByPercent dropdown selectFilm" id="selectMoive">
+                <div class="dropdown-toggle selectMenu white ng-binding border-right"
+                    ng-click="onClickHomeToolsMenu($event)" data-toggle="dropdown" aria-expanded="false">Phim</div>
+                <ul class="dropdown-menu selectScroll">
+                    <li ng-repeat="film in toolFilms" class="ng-scope">
+                        <a ng-click="chooseMovie($event)" data-id="2398" data-name="Bằng Chứng Vô Hình - (C18)"
+                            class="ng-binding">Bằng Chứng Vô Hình - (C18)</a>
+                    </li>
+                    <li ng-repeat="film in toolFilms" class="ng-scope">
+                        <a ng-click="chooseMovie($event)" data-id="2377" data-name="Bán Đảo - Peninsula - (C18)"
+                            class="ng-binding">Bán Đảo - Peninsula - (C18)</a>
+                    </li>
+                    <li ng-repeat="film in toolFilms" class="ng-scope">
+                        <a ng-click="chooseMovie($event)" data-id="2431" data-name="Đỉnh Mù Sương - Foggy Mountain - (C18)"
+                            class="ng-binding">Đỉnh Mù Sương - Foggy Mountain - (C18)</a>
+                    </li>
+                    <li ng-repeat="film in toolFilms" class="ng-scope">
+                        <a ng-click="chooseMovie($event)" data-id="2430" data-name="Yêu Nhau Mùa Ế - Low Season - (C16)"
+                            class="ng-binding">Yêu Nhau Mùa Ế - Low Season - (C16)</a>
+                    </li>
+                    <li ng-repeat="film in toolFilms" class="ng-scope">
+                        <a ng-click="chooseMovie($event)" data-id="2296"
+                            data-name="Cuộc Phiêu Lưu Của Scooby-doo! - Scoob! - (P)" class="ng-binding">Cuộc Phiêu Lưu Của
+                            Scooby-doo! - Scoob! - (P)</a>
+                    </li>
+                    <li ng-repeat="film in toolFilms" class="ng-scope">
+                        <a ng-click="chooseMovie($event)" data-id="2424" data-name="Ngôi Đền Kì Quái - Pee Nak 2 - (C16)"
+                            class="ng-binding">Ngôi Đền Kì Quái - Pee Nak 2 - (C16)</a>
+                    </li>
+                    <li ng-repeat="film in toolFilms" class="ng-scope">
+                        <a ng-click="chooseMovie($event)" data-id="2425" data-name="Phi Vụ Bão Tố - Force Of Nature - (C18)"
+                            class="ng-binding">Phi Vụ Bão Tố - Force Of Nature - (C18)</a>
+                    </li>
+                    <li ng-repeat="film in toolFilms" class="ng-scope">
+                        <a ng-click="chooseMovie($event)" data-id="2429"
+                            data-name="Tiếng Vọng Từ Địa Ngục - The Voices - (C16)" class="ng-binding">Tiếng Vọng Từ Địa
+                            Ngục - The Voices - (C16)</a>
+                    </li>
+                    <li ng-repeat="film in toolFilms" class="ng-scope">
+                        <a ng-click="chooseMovie($event)" data-id="2417" data-name="Kẻ Xâm Nhập - Intruder (C18)"
+                            class="ng-binding">Kẻ Xâm Nhập - Intruder (C18)</a>
+                    </li>
+    
+                </ul>
+            </div>
+            <div class="smallBlock widthByPercent dropdown selectCinema">
+                <div class="dropdown-toggle selectMenu white ng-binding border-right"
+                    ng-click="onClickHomeToolsMenu($event)" data-toggle="dropdown">Rạp</div>
+                <ul class="dropdown-menu" ng-class="{'selectScroll': (isChoseMovie &amp;&amp; toolCinemas.length > 0)}">
+                    <li ng-if="!isChoseMovie" class="ng-scope">
+                        <a class="ng-binding">Vui lòng chọn phim</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="smallBlock widthByPercent dropdown selectDate">
+                <div class="dropdown-toggle selectMenu white ng-binding border-right"
+                    ng-click="onClickHomeToolsMenu($event)" data-toggle="dropdown">Ngày xem</div>
+                <ul class="dropdown-menu">
+                    <li ng-if="!isChoseCinema" class="ng-scope"><a>Vui lòng chọn phim và rạp</a></li>
+                </ul>
+            </div>
+            <div class="smallBlock widthByPercent dropdown selectSession">
+                <div class="dropdown-toggle selectMenu white ng-binding border-right"
+                    ng-click="onClickHomeToolsMenu($event)" data-toggle="dropdown">Suất chiếu</div>
+                <ul class="dropdown-menu">
+                    <li ng-if="!isChoseDate" class="ng-scope"><a>Vui lòng chọn phim, rạp và ngày xem</a></li>
+                </ul>
+            </div>
+            <div class="smallBlock widthByPercent">
+                <div class="after-btn"></div>
+                <div class="before-btn"></div>
+                <button ng-click="buyTicket()" type="button" class="btn btn-primary" ng-class="{'active':canBuyNowTool}"
+                    id="btnBuy">MUA VÉ NGAY</button>
             </div>
         </div>
     </section>
     <!--END CAROUSEL -->
-    <div id="homeTools" class="hideOnMobile my-4">
-        <div class="w30p widthByPercent dropdown selectFilm" id="selectMoive">
-            <div class="dropdown-toggle selectMenu white ng-binding border-right"
-                ng-click="onClickHomeToolsMenu($event)" data-toggle="dropdown" aria-expanded="false">Phim</div>
-            <ul class="dropdown-menu selectScroll">
-                <li ng-repeat="film in toolFilms" class="ng-scope">
-                    <a ng-click="chooseMovie($event)" data-id="2398" data-name="Bằng Chứng Vô Hình - (C18)"
-                        class="ng-binding">Bằng Chứng Vô Hình - (C18)</a>
-                </li>
-                <li ng-repeat="film in toolFilms" class="ng-scope">
-                    <a ng-click="chooseMovie($event)" data-id="2377" data-name="Bán Đảo - Peninsula - (C18)"
-                        class="ng-binding">Bán Đảo - Peninsula - (C18)</a>
-                </li>
-                <li ng-repeat="film in toolFilms" class="ng-scope">
-                    <a ng-click="chooseMovie($event)" data-id="2431" data-name="Đỉnh Mù Sương - Foggy Mountain - (C18)"
-                        class="ng-binding">Đỉnh Mù Sương - Foggy Mountain - (C18)</a>
-                </li>
-                <li ng-repeat="film in toolFilms" class="ng-scope">
-                    <a ng-click="chooseMovie($event)" data-id="2430" data-name="Yêu Nhau Mùa Ế - Low Season - (C16)"
-                        class="ng-binding">Yêu Nhau Mùa Ế - Low Season - (C16)</a>
-                </li>
-                <li ng-repeat="film in toolFilms" class="ng-scope">
-                    <a ng-click="chooseMovie($event)" data-id="2296"
-                        data-name="Cuộc Phiêu Lưu Của Scooby-doo! - Scoob! - (P)" class="ng-binding">Cuộc Phiêu Lưu Của
-                        Scooby-doo! - Scoob! - (P)</a>
-                </li>
-                <li ng-repeat="film in toolFilms" class="ng-scope">
-                    <a ng-click="chooseMovie($event)" data-id="2424" data-name="Ngôi Đền Kì Quái - Pee Nak 2 - (C16)"
-                        class="ng-binding">Ngôi Đền Kì Quái - Pee Nak 2 - (C16)</a>
-                </li>
-                <li ng-repeat="film in toolFilms" class="ng-scope">
-                    <a ng-click="chooseMovie($event)" data-id="2425" data-name="Phi Vụ Bão Tố - Force Of Nature - (C18)"
-                        class="ng-binding">Phi Vụ Bão Tố - Force Of Nature - (C18)</a>
-                </li>
-                <li ng-repeat="film in toolFilms" class="ng-scope">
-                    <a ng-click="chooseMovie($event)" data-id="2429"
-                        data-name="Tiếng Vọng Từ Địa Ngục - The Voices - (C16)" class="ng-binding">Tiếng Vọng Từ Địa
-                        Ngục - The Voices - (C16)</a>
-                </li>
-                <li ng-repeat="film in toolFilms" class="ng-scope">
-                    <a ng-click="chooseMovie($event)" data-id="2417" data-name="Kẻ Xâm Nhập - Intruder (C18)"
-                        class="ng-binding">Kẻ Xâm Nhập - Intruder (C18)</a>
-                </li>
-
-            </ul>
-        </div>
-        <div class="smallBlock widthByPercent dropdown selectCinema">
-            <div class="dropdown-toggle selectMenu white ng-binding border-right"
-                ng-click="onClickHomeToolsMenu($event)" data-toggle="dropdown">Rạp</div>
-            <ul class="dropdown-menu" ng-class="{'selectScroll': (isChoseMovie &amp;&amp; toolCinemas.length > 0)}">
-                <li ng-if="!isChoseMovie" class="ng-scope">
-                    <a class="ng-binding">Vui lòng chọn phim</a>
-                </li>
-            </ul>
-        </div>
-        <div class="smallBlock widthByPercent dropdown selectDate">
-            <div class="dropdown-toggle selectMenu white ng-binding border-right"
-                ng-click="onClickHomeToolsMenu($event)" data-toggle="dropdown">Ngày xem</div>
-            <ul class="dropdown-menu">
-                <li ng-if="!isChoseCinema" class="ng-scope"><a>Vui lòng chọn phim và rạp</a></li>
-            </ul>
-        </div>
-        <div class="smallBlock widthByPercent dropdown selectSession">
-            <div class="dropdown-toggle selectMenu white ng-binding border-right"
-                ng-click="onClickHomeToolsMenu($event)" data-toggle="dropdown">Suất chiếu</div>
-            <ul class="dropdown-menu">
-                <li ng-if="!isChoseDate" class="ng-scope"><a>Vui lòng chọn phim, rạp và ngày xem</a></li>
-            </ul>
-        </div>
-        <div class="smallBlock widthByPercent">
-            <div class="after-btn"></div>
-            <div class="before-btn"></div>
-            <button ng-click="buyTicket()" type="button" class="btn btn-primary" ng-class="{'active':canBuyNowTool}"
-                id="btnBuy">MUA VÉ NGAY</button>
-        </div>
-    </div>
-
-    <div class="container">
-
-
+    <div class="container newin_movie">
         <div class="row">
             <div class="col-md-12">
                 <div class="tab-movies">
@@ -224,107 +187,117 @@
                                         <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
                                             <div class="article-movie-home">
                                                 <img src="./images/dinhmusuong.jpg" alt="">
+                                                
                                             </div>
-                                            <div class="title-movie">
-                                                <h4>Đỉnh Mù Sương</h4>
-                                                <i class="fa fa-star movie__star"></i>
-                                                <i class="fa fa-star movie__star"></i>
-                                                <i class="fa fa-star movie__star"></i>
-                                                <i class="fa fa-star movie__star"></i>
-                                                <i class="fa fa-star movie__star"></i>
+                                            <div class="movie__detail">
+                                                <div class="movie__overlay"></div>
                                             </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
-                                            <div class="article-movie-home">
-                                                <div class="article-movie-home">
-                                                    <img src="./images/dinhmusuong.jpg" alt="">
-                                                </div>
-                                                <div class="title-movie">
-                                                    <h4>Đỉnh Mù Sương</h4>
-                                                    <i class="fa fa-star movie__star"></i>
-                                                    <i class="fa fa-star movie__star"></i>
-                                                    <i class="fa fa-star movie__star"></i>
-                                                    <i class="fa fa-star movie__star"></i>
-                                                    <i class="fa fa-star movie__star"></i>
-                                                </div>
+                                            <div class="title-movie my-3">
+                                                <h4 class="text-secondary">ĐỈNH MÙ SƯƠNG</h4>
+                                                <span class="avgPoint">
+                                                    <p class="txtPoint ng-binding">9.5</p>
+                                                    <p ng-bind-html="setStar(film.avg_point)" class="ng-binding">
+                                                        <img class="smallStar" src="./images/star.png">
+                                                        <img class="smallStar" src="./images/star.png">
+                                                        <img class="smallStar" src="./images/star.png">
+                                                        <img class="smallStar" src="./images/star.png">
+                                                        <img class="smallStar" src="./images/star.png">
+                                                    </p>
+                                                </span>
                                             </div>
                                         </div>
                                         <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
                                             <div class="article-movie-home">
                                                 <div class="article-movie-home">
-                                                    <img src="./images/dinhmusuong.jpg" alt="">
+                                                    <img src="./images/bandao.jpg" alt="">
                                                 </div>
-                                                <div class="title-movie">
-                                                    <h4>Đỉnh Mù Sương</h4>
-                                                    <i class="fa fa-star movie__star"></i>
-                                                    <i class="fa fa-star movie__star"></i>
-                                                    <i class="fa fa-star movie__star"></i>
-                                                    <i class="fa fa-star movie__star"></i>
-                                                    <i class="fa fa-star movie__star"></i>
+                                                <div class="title-movie my-3">
+                                                    <h4 class="text-secondary">BÁN ĐẢO</h4>
+                                                    <span class="avgPoint">
+                                                        <p class="txtPoint ng-binding">9.5</p>
+                                                        <p ng-bind-html="setStar(film.avg_point)" class="ng-binding">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                        </p>
+                                                    </span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
                                             <div class="article-movie-home">
-                                                <img src="https://galaxycine.vn/media/2020/7/9/450x300-1_1594268732083.jpg"
-                                                    data-src="https://galaxycine.vn/media/2020/7/9/450x300-1_1594268732083.jpg"
-                                                    class="lazy loaded" data-was-processed="true">
-                                                <a href="/dat-ve/check-in-shock">
-                                                    <div class="decription-hover overlay">
-                                                        <div class="movies-content">
-                                                            <i class="icon-c18"></i>
-                                                            <div class="group">
-                                                                <div class="btn secondary-white">mua vé</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="title-movie">
-                                                <h4 class="upper-text">Check In Shock</h4>
-                                                <h4 class="vn upper-text">Trò Chơi Chết Chóc</h4>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
-                                            <div class="article-movie-home">
-                                                <img src="https://galaxycine.vn/media/2020/7/6/publicpreview_1594006611017.jpg"
-                                                    data-src="https://galaxycine.vn/media/2020/7/6/publicpreview_1594006611017.jpg"
-                                                    class="lazy loaded" data-was-processed="true">
-                                                <a href="/dat-ve/without-the-body">
-                                                    <div class="decription-hover overlay">
-                                                        <div class="movies-content">
-                                                            <i class="icon-c18"></i>
-                                                            <div class="group">
-                                                                <div class="btn secondary-white">mua vé</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="title-movie">
-                                                <h4 class="upper-text">Without A Body</h4>
-                                                <h4 class="vn upper-text">Bóng Ma Không Xác</h4>
+                                                <div class="article-movie-home">
+                                                    <img src="./images/tantichquyam.jpg" alt="">
+                                                </div>
+                                                <div class="title-movie my-3">
+                                                    <h4 class="text-secondary">TÀN TÍCH QUỶ ÁM</h4>
+                                                    <span class="avgPoint">
+                                                        <p class="txtPoint ng-binding">9.5</p>
+                                                        <p ng-bind-html="setStar(film.avg_point)" class="ng-binding">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                        </p>
+                                                    </span>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
                                             <div class="article-movie-home">
-                                                <img src="https://galaxycine.vn/media/2020/7/6/publicpreview_1594006611017.jpg"
-                                                    data-src="https://galaxycine.vn/media/2020/7/6/publicpreview_1594006611017.jpg"
-                                                    class="lazy loaded" data-was-processed="true">
-                                                <a href="/dat-ve/without-the-body">
-                                                    <div class="decription-hover overlay">
-                                                        <div class="movies-content">
-                                                            <i class="icon-c18"></i>
-                                                            <div class="group">
-                                                                <div class="btn secondary-white">mua vé</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
+                                                <img src="./images/trochoichetchoc.jpg" alt="">
                                             </div>
-                                            <div class="title-movie">
-                                                <h4 class="upper-text">Without A Body</h4>
-                                                <h4 class="vn upper-text">Bóng Ma Không Xác</h4>
+                                            <div class="title-movie my-3">
+                                                <h4 class="text-secondary">TRÒ CHƠI CHÊT CHÓC</h4>
+                                                <span class="avgPoint">
+                                                        <p class="txtPoint ng-binding">9.5</p>
+                                                        <p ng-bind-html="setStar(film.avg_point)" class="ng-binding">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                        </p>
+                                                    </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
+                                            <div class="article-movie-home">
+                                                <img src="./images/bongmakhongxac.jpg">
+                                            </div>
+                                            <div class="title-movie my-3">
+                                                <h4 class="text-secondary">BÓNG MA KHÔNG XÁC</h4>
+                                                <span class="avgPoint">
+                                                        <p class="txtPoint ng-binding">9.5</p>
+                                                        <p ng-bind-html="setStar(film.avg_point)" class="ng-binding">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                        </p>
+                                                    </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
+                                            <div class="article-movie-home">
+                                                <img src="./images/scoob.jpg">
+                                            </div>
+                                            <div class="title-movie my-3">
+                                                <h4 class="text-secondary">CUỘC PHIÊU LƯU CỦA SCOOBY-DOO</h4>
+                                                <span class="avgPoint">
+                                                        <p class="txtPoint ng-binding">9.5</p>
+                                                        <p ng-bind-html="setStar(film.avg_point)" class="ng-binding">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                        </p>
+                                                    </span>
                                             </div>
                                         </div>
                                     </div>
@@ -339,133 +312,125 @@
                                 <div class="row movies-group animated fadeInUp">
                                     <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
                                         <div class="article-movie-home">
-                                            <img src="https://galaxycine.vn/media/2020/7/14/1024wx768h_1594715100759.jpg"
-                                                data-src="https://galaxycine.vn/media/2020/7/14/1024wx768h_1594715100759.jpg"
-                                                class="lazy loaded" data-was-processed="true">
-                                            <a href="/dat-ve/pinocchio">
-                                                <div class="decription-hover overlay">
-                                                    <div class="movies-content">
-                                                        <i></i>
-                                                        <div class="group">
-                                                            <div class="btn secondary-white">mua vé</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
+                                            <img src="./images/pinocchio.jpg">
                                         </div>
-                                        <div class="title-movie">
-                                            <h4 class="upper-text">Pinocchio</h4>
-                                            <h4 class="vn upper-text"></h4>
+                                        <div class="title-movie my-3">
+                                            <h4 class="text-secondary">PINOCCHIO</h4>
+                                            <span class="avgPoint">
+                                                        <p class="txtPoint ng-binding">9.5</p>
+                                                        <p ng-bind-html="setStar(film.avg_point)" class="ng-binding">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                        </p>
+                                                    </span>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
                                         <div class="article-movie-home">
-                                            <img src="https://galaxycine.vn/media/2020/7/14/450wx300h_1594697805271.jpg"
-                                                data-src="https://galaxycine.vn/media/2020/7/14/450wx300h_1594697805271.jpg"
-                                                class="lazy loaded" data-was-processed="true">
-                                            <a href="/dat-ve/ghosts-of-war">
-                                                <div class="decription-hover overlay">
-                                                    <div class="movies-content">
-                                                        <i class="icon-c18"></i>
-                                                        <div class="group">
-                                                            <div class="btn secondary-white">mua vé</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
+                                            <img src="images/dinhthu.jpg">
                                         </div>
-                                        <div class="title-movie">
-                                            <h4 class="upper-text">Ghosts Of War</h4>
-                                            <h4 class="vn upper-text">Dinh Thự Oan Khuất</h4>
+                                        <div class="title-movie my-3">
+                                            <h4 class="text-secondary">DINH THỰ OAN KHUẤT</h4>
+                                            <span class="avgPoint">
+                                                        <p class="txtPoint ng-binding">9.5</p>
+                                                        <p ng-bind-html="setStar(film.avg_point)" class="ng-binding">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                        </p>
+                                                    </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
+                                        <span class="avgPoint">
+                                                        <p class="txtPoint ng-binding">9.5</p>
+                                                        <p ng-bind-html="setStar(film.avg_point)" class="ng-binding">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                        </p>
+                                                    </span>
+                                        <div class="article-movie-home">
+                                            <img src="images/ten.jpg">
+                                        </div>
+                                        <div class="title-movie my-3">
+                                            <h4 class="text-secondary">TENET</h4>
+                                            <span class="avgPoint">
+                                                        <p class="txtPoint ng-binding">9.5</p>
+                                                        <p ng-bind-html="setStar(film.avg_point)" class="ng-binding">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                        </p>
+                                                    </span>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
                                         <div class="article-movie-home">
-                                            <img src="https://galaxycine.vn/media/2020/6/3/83701756-623014251789245-7046287981056884736-o_1591173944477.jpg"
-                                                data-src="https://galaxycine.vn/media/2020/6/3/83701756-623014251789245-7046287981056884736-o_1591173944477.jpg"
-                                                class="lazy loaded" data-was-processed="true">
-                                            <a href="/dat-ve/tenet">
-                                                <div class="decription-hover overlay">
-                                                    <div class="movies-content">
-                                                        <i></i>
-                                                        <div class="group">
-                                                            <div class="btn secondary-white">mua vé</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
+                                            <img src="images/tiectrangmau.jpg">
                                         </div>
-                                        <div class="title-movie">
-                                            <h4 class="upper-text">Tenet</h4>
-                                            <h4 class="vn upper-text"></h4>
+                                        <div class="title-movie my-3">
+                                            <h4 class="text-secondary">TIỆC TRĂNG MÁU</h4>
+                                            <span class="avgPoint">
+                                                        <p class="txtPoint ng-binding">9.5</p>
+                                                        <p ng-bind-html="setStar(film.avg_point)" class="ng-binding">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                        </p>
+                                                    </span>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
                                         <div class="article-movie-home">
-                                            <img src="https://galaxycine.vn/media/2020/6/22/450x300_1592795432576.jpg"
-                                                data-src="https://galaxycine.vn/media/2020/6/22/450x300_1592795432576.jpg"
-                                                class="lazy loaded" data-was-processed="true">
-                                            <a href="/dat-ve/tiec-trang-mau">
-                                                <div class="decription-hover overlay">
-                                                    <div class="movies-content">
-                                                        <i></i>
-                                                        <div class="group">
-                                                            <div class="btn secondary-white">mua vé</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
+                                            <img src="images/dinhanhthehemoi.jpg">
                                         </div>
-                                        <div class="title-movie">
-                                            <h4 class="upper-text">Tiệc Trăng Máu</h4>
-                                            <h4 class="vn upper-text"></h4>
+                                        <div class="title-movie my-3">
+                                            <h4 class="text-secondary">DỊ NHÂN THẾ HỆ MỚI</h4>
+                                            <span class="avgPoint">
+                                                        <p class="txtPoint ng-binding">9.5</p>
+                                                        <p ng-bind-html="setStar(film.avg_point)" class="ng-binding">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                        </p>
+                                                    </span>
                                         </div>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
                                         <div class="article-movie-home">
-                                            <img src="https://galaxycine.vn/media/2020/5/22/banner-quad-blue_1590120387910.jpg"
-                                                data-src="https://galaxycine.vn/media/2020/5/22/banner-quad-blue_1590120387910.jpg"
-                                                class="lazy loaded" data-was-processed="true">
-                                            <a href="/dat-ve/the-new-mutants">
-                                                <div class="decription-hover overlay">
-                                                    <div class="movies-content">
-                                                        <i></i>
-                                                        <div class="group">
-                                                            <div class="btn secondary-white">mua vé</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
+                                            <img src="images/vungdatcamlang.jpg">
                                         </div>
-                                        <div class="title-movie">
-                                            <h4 class="upper-text">The New Mutants</h4>
-                                            <h4 class="vn upper-text">Dị Nhân Thế Hệ Mới</h4>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
-                                        <div class="article-movie-home">
-                                            <img src="https://galaxycine.vn/media/2019/12/19/aqp2-intl-tsr-dgtl-1-sht-imax-vie---copy-2_1576723481323.jpg"
-                                                data-src="https://galaxycine.vn/media/2019/12/19/aqp2-intl-tsr-dgtl-1-sht-imax-vie---copy-2_1576723481323.jpg"
-                                                class="lazy loaded" data-was-processed="true">
-                                            <a href="/dat-ve/a-quiet-place-2">
-                                                <div class="decription-hover overlay">
-                                                    <div class="movies-content">
-                                                        <i></i>
-                                                        <div class="group">
-                                                            <div class="btn secondary-white">mua vé</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="title-movie">
-                                            <h4 class="upper-text">A Quiet Place 2</h4>
-                                            <h4 class="vn upper-text">Vùng Đất Câm Lặng 2</h4>
+                                        <div class="title-movie my-3">
+                                            <h4 class="text-secondary">VÙNG ĐẤT CÂM LẶNG 2</h4>
+                                            <span class="avgPoint">
+                                                        <p class="txtPoint ng-binding">9.5</p>
+                                                        <p ng-bind-html="setStar(film.avg_point)" class="ng-binding">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                            <img class="smallStar" src="./images/star.png">
+                                                        </p>
+                                                    </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-12 col-sm-12 col-xs-12 pull-right">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
                                         <a href="/phim-sap-chieu" class="btn secondary fl-right">Xem thêm</a>
                                     </div>
                                 </div>
