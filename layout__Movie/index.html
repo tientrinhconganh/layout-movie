@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie__layout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header__detail">
+            <p class="text-right text-white mb-0">
+                <i class="fa fa-phone"></i>
+                <span class="mx-2 border-right pr-2 font-weight-bold">0792723651</span>
+                <i class="fa fa-search"></i>
+            </p>
+        </div>
+        <nav class="container navbar header__navbar navbar-expand-lg navbar-dark py-0">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.svg" alt="">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="#myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">WHAT'ON</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">SHORTCODES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">SIGN IN</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--END HEADER -->
+    <!-- CAROUSEL -->
+    <section class="my-carousel">
+        <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators container">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://www.galaxycine.vn/media/2020/7/14/2048x682_1594712582225.jpg"
+                        class="d-block w-100" alt="...">
+                    <!-- <div class="carousel-item__overlay"></div> -->
+                    <!-- <div class="carousel-item__caption container text-white">
+                    <span class="title">ACTION, ADVENTURE, FANTASY</span>
+                    <h1 class="display-4">End of the World: Part I</h1>
+                    <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum.</p>
+                    <div class="carousel-item__trailer mt-4">
+                        <span class="mr-2 text-whitex d-inline-block text-center rounded-circle">PG</span>
+                        <button class="btn-orange">
+                            <i class="fa fa-play mr-2"></i>
+                            PLAY TRAILER
+                        </button>
+                    </div>
+                </div> -->
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.galaxycine.vn/media/2020/7/14/2048x682_1594709746407.jpg"
+                        class="d-block w-100" alt="...">
+                    <!-- <div class="carousel-item__overlay"></div>
+                <div class="carousel-item__caption container text-white">
+                    <span class="title">ACTION,ADVENTURE,FANTASY</span>
+                    <h1 class="display-4">End of the World: Part I</h1>
+                    <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum.</p>
+                    <div class="carousel-item__trailer mt-4">
+                        <span class="mr-2 text-whitex d-inline-block text-center rounded-circle">PG</span>
+                        <button class="btn-orange">
+                            <i class="fa fa-play mr-2"></i>
+                            PLAY TRAILER
+                        </button>
+                    </div>
+                </div> -->
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.galaxycine.vn/media/2020/7/10/2048x682_1594349170282.jpg"
+                        class="d-block w-100" alt="...">
+                    <!-- <div class="carousel-item__overlay"></div>
+                <div class="carousel-item__caption container text-white">
+                    <span class="title">ACTION,ADVENTURE,FANTASY</span>
+                    <h1 class="display-4">End of the World: Part I</h1>
+                    <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum.</p>
+                    <div class="carousel-item__trailer mt-4">
+                        <span class="mr-2 text-whitex d-inline-block text-center rounded-circle">PG</span>
+                        <button class="btn-orange">
+                            <i class="fa fa-play mr-2"></i>
+                            PLAY TRAILER
+                        </button>
+                    </div>
+                </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END CAROUSEL -->
+    <div id="homeTools" class="hideOnMobile my-4">
+        <div class="w30p widthByPercent dropdown selectFilm" id="selectMoive">
+            <div class="dropdown-toggle selectMenu white ng-binding border-right"
+                ng-click="onClickHomeToolsMenu($event)" data-toggle="dropdown" aria-expanded="false">Phim</div>
+            <ul class="dropdown-menu selectScroll">
+                <li ng-repeat="film in toolFilms" class="ng-scope">
+                    <a ng-click="chooseMovie($event)" data-id="2398" data-name="Bằng Chứng Vô Hình - (C18)"
+                        class="ng-binding">Bằng Chứng Vô Hình - (C18)</a>
+                </li>
+                <li ng-repeat="film in toolFilms" class="ng-scope">
+                    <a ng-click="chooseMovie($event)" data-id="2377" data-name="Bán Đảo - Peninsula - (C18)"
+                        class="ng-binding">Bán Đảo - Peninsula - (C18)</a>
+                </li>
+                <li ng-repeat="film in toolFilms" class="ng-scope">
+                    <a ng-click="chooseMovie($event)" data-id="2431" data-name="Đỉnh Mù Sương - Foggy Mountain - (C18)"
+                        class="ng-binding">Đỉnh Mù Sương - Foggy Mountain - (C18)</a>
+                </li>
+                <li ng-repeat="film in toolFilms" class="ng-scope">
+                    <a ng-click="chooseMovie($event)" data-id="2430" data-name="Yêu Nhau Mùa Ế - Low Season - (C16)"
+                        class="ng-binding">Yêu Nhau Mùa Ế - Low Season - (C16)</a>
+                </li>
+                <li ng-repeat="film in toolFilms" class="ng-scope">
+                    <a ng-click="chooseMovie($event)" data-id="2296"
+                        data-name="Cuộc Phiêu Lưu Của Scooby-doo! - Scoob! - (P)" class="ng-binding">Cuộc Phiêu Lưu Của
+                        Scooby-doo! - Scoob! - (P)</a>
+                </li>
+                <li ng-repeat="film in toolFilms" class="ng-scope">
+                    <a ng-click="chooseMovie($event)" data-id="2424" data-name="Ngôi Đền Kì Quái - Pee Nak 2 - (C16)"
+                        class="ng-binding">Ngôi Đền Kì Quái - Pee Nak 2 - (C16)</a>
+                </li>
+                <li ng-repeat="film in toolFilms" class="ng-scope">
+                    <a ng-click="chooseMovie($event)" data-id="2425" data-name="Phi Vụ Bão Tố - Force Of Nature - (C18)"
+                        class="ng-binding">Phi Vụ Bão Tố - Force Of Nature - (C18)</a>
+                </li>
+                <li ng-repeat="film in toolFilms" class="ng-scope">
+                    <a ng-click="chooseMovie($event)" data-id="2429"
+                        data-name="Tiếng Vọng Từ Địa Ngục - The Voices - (C16)" class="ng-binding">Tiếng Vọng Từ Địa
+                        Ngục - The Voices - (C16)</a>
+                </li>
+                <li ng-repeat="film in toolFilms" class="ng-scope">
+                    <a ng-click="chooseMovie($event)" data-id="2417" data-name="Kẻ Xâm Nhập - Intruder (C18)"
+                        class="ng-binding">Kẻ Xâm Nhập - Intruder (C18)</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="smallBlock widthByPercent dropdown selectCinema">
+            <div class="dropdown-toggle selectMenu white ng-binding border-right"
+                ng-click="onClickHomeToolsMenu($event)" data-toggle="dropdown">Rạp</div>
+            <ul class="dropdown-menu" ng-class="{'selectScroll': (isChoseMovie &amp;&amp; toolCinemas.length > 0)}">
+                <li ng-if="!isChoseMovie" class="ng-scope">
+                    <a class="ng-binding">Vui lòng chọn phim</a>
+                </li>
+            </ul>
+        </div>
+        <div class="smallBlock widthByPercent dropdown selectDate">
+            <div class="dropdown-toggle selectMenu white ng-binding border-right"
+                ng-click="onClickHomeToolsMenu($event)" data-toggle="dropdown">Ngày xem</div>
+            <ul class="dropdown-menu">
+                <li ng-if="!isChoseCinema" class="ng-scope"><a>Vui lòng chọn phim và rạp</a></li>
+            </ul>
+        </div>
+        <div class="smallBlock widthByPercent dropdown selectSession">
+            <div class="dropdown-toggle selectMenu white ng-binding border-right"
+                ng-click="onClickHomeToolsMenu($event)" data-toggle="dropdown">Suất chiếu</div>
+            <ul class="dropdown-menu">
+                <li ng-if="!isChoseDate" class="ng-scope"><a>Vui lòng chọn phim, rạp và ngày xem</a></li>
+            </ul>
+        </div>
+        <div class="smallBlock widthByPercent">
+            <div class="after-btn"></div>
+            <div class="before-btn"></div>
+            <button ng-click="buyTicket()" type="button" class="btn btn-primary" ng-class="{'active':canBuyNowTool}"
+                id="btnBuy">MUA VÉ NGAY</button>
+        </div>
+    </div>
+
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tab-movies">
+                    <div class="tab-movies-line">
+                        <div class="hot-news pull-right">
+                            <img src="./img/icon-hotnews" alt="">
+                            <a href="#">Đỉnh Mù Sương: Phim Võ Thuật Đỉnh Cao</a>
+                        </div>
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Phim đang
+                                    chiếu</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Phim sắp
+                                    chiếu</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <div class="tab-pane active" id="phim-dang-chieu">
+                                    <div class="row movies-group">
+                                        <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
+                                            <div class="article-movie-home">
+                                                <img src="./images/dinhmusuong.jpg" alt="">
+                                            </div>
+                                            <div class="title-movie">
+                                                <h4>Đỉnh Mù Sương</h4>
+                                                <i class="fa fa-star movie__star"></i>
+                                                <i class="fa fa-star movie__star"></i>
+                                                <i class="fa fa-star movie__star"></i>
+                                                <i class="fa fa-star movie__star"></i>
+                                                <i class="fa fa-star movie__star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
+                                            <div class="article-movie-home">
+                                                <div class="article-movie-home">
+                                                    <img src="./images/dinhmusuong.jpg" alt="">
+                                                </div>
+                                                <div class="title-movie">
+                                                    <h4>Đỉnh Mù Sương</h4>
+                                                    <i class="fa fa-star movie__star"></i>
+                                                    <i class="fa fa-star movie__star"></i>
+                                                    <i class="fa fa-star movie__star"></i>
+                                                    <i class="fa fa-star movie__star"></i>
+                                                    <i class="fa fa-star movie__star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
+                                            <div class="article-movie-home">
+                                                <div class="article-movie-home">
+                                                    <img src="./images/dinhmusuong.jpg" alt="">
+                                                </div>
+                                                <div class="title-movie">
+                                                    <h4>Đỉnh Mù Sương</h4>
+                                                    <i class="fa fa-star movie__star"></i>
+                                                    <i class="fa fa-star movie__star"></i>
+                                                    <i class="fa fa-star movie__star"></i>
+                                                    <i class="fa fa-star movie__star"></i>
+                                                    <i class="fa fa-star movie__star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
+                                            <div class="article-movie-home">
+                                                <img src="https://galaxycine.vn/media/2020/7/9/450x300-1_1594268732083.jpg"
+                                                    data-src="https://galaxycine.vn/media/2020/7/9/450x300-1_1594268732083.jpg"
+                                                    class="lazy loaded" data-was-processed="true">
+                                                <a href="/dat-ve/check-in-shock">
+                                                    <div class="decription-hover overlay">
+                                                        <div class="movies-content">
+                                                            <i class="icon-c18"></i>
+                                                            <div class="group">
+                                                                <div class="btn secondary-white">mua vé</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="title-movie">
+                                                <h4 class="upper-text">Check In Shock</h4>
+                                                <h4 class="vn upper-text">Trò Chơi Chết Chóc</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
+                                            <div class="article-movie-home">
+                                                <img src="https://galaxycine.vn/media/2020/7/6/publicpreview_1594006611017.jpg"
+                                                    data-src="https://galaxycine.vn/media/2020/7/6/publicpreview_1594006611017.jpg"
+                                                    class="lazy loaded" data-was-processed="true">
+                                                <a href="/dat-ve/without-the-body">
+                                                    <div class="decription-hover overlay">
+                                                        <div class="movies-content">
+                                                            <i class="icon-c18"></i>
+                                                            <div class="group">
+                                                                <div class="btn secondary-white">mua vé</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="title-movie">
+                                                <h4 class="upper-text">Without A Body</h4>
+                                                <h4 class="vn upper-text">Bóng Ma Không Xác</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
+                                            <div class="article-movie-home">
+                                                <img src="https://galaxycine.vn/media/2020/7/6/publicpreview_1594006611017.jpg"
+                                                    data-src="https://galaxycine.vn/media/2020/7/6/publicpreview_1594006611017.jpg"
+                                                    class="lazy loaded" data-was-processed="true">
+                                                <a href="/dat-ve/without-the-body">
+                                                    <div class="decription-hover overlay">
+                                                        <div class="movies-content">
+                                                            <i class="icon-c18"></i>
+                                                            <div class="group">
+                                                                <div class="btn secondary-white">mua vé</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="title-movie">
+                                                <h4 class="upper-text">Without A Body</h4>
+                                                <h4 class="vn upper-text">Bóng Ma Không Xác</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12 pull-right">
+                                        <a href="/phim-dang-chieu" class="btn secondary fl-right">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <div class="row movies-group animated fadeInUp">
+                                    <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
+                                        <div class="article-movie-home">
+                                            <img src="https://galaxycine.vn/media/2020/7/14/1024wx768h_1594715100759.jpg"
+                                                data-src="https://galaxycine.vn/media/2020/7/14/1024wx768h_1594715100759.jpg"
+                                                class="lazy loaded" data-was-processed="true">
+                                            <a href="/dat-ve/pinocchio">
+                                                <div class="decription-hover overlay">
+                                                    <div class="movies-content">
+                                                        <i></i>
+                                                        <div class="group">
+                                                            <div class="btn secondary-white">mua vé</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="title-movie">
+                                            <h4 class="upper-text">Pinocchio</h4>
+                                            <h4 class="vn upper-text"></h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
+                                        <div class="article-movie-home">
+                                            <img src="https://galaxycine.vn/media/2020/7/14/450wx300h_1594697805271.jpg"
+                                                data-src="https://galaxycine.vn/media/2020/7/14/450wx300h_1594697805271.jpg"
+                                                class="lazy loaded" data-was-processed="true">
+                                            <a href="/dat-ve/ghosts-of-war">
+                                                <div class="decription-hover overlay">
+                                                    <div class="movies-content">
+                                                        <i class="icon-c18"></i>
+                                                        <div class="group">
+                                                            <div class="btn secondary-white">mua vé</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="title-movie">
+                                            <h4 class="upper-text">Ghosts Of War</h4>
+                                            <h4 class="vn upper-text">Dinh Thự Oan Khuất</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
+                                        <div class="article-movie-home">
+                                            <img src="https://galaxycine.vn/media/2020/6/3/83701756-623014251789245-7046287981056884736-o_1591173944477.jpg"
+                                                data-src="https://galaxycine.vn/media/2020/6/3/83701756-623014251789245-7046287981056884736-o_1591173944477.jpg"
+                                                class="lazy loaded" data-was-processed="true">
+                                            <a href="/dat-ve/tenet">
+                                                <div class="decription-hover overlay">
+                                                    <div class="movies-content">
+                                                        <i></i>
+                                                        <div class="group">
+                                                            <div class="btn secondary-white">mua vé</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="title-movie">
+                                            <h4 class="upper-text">Tenet</h4>
+                                            <h4 class="vn upper-text"></h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
+                                        <div class="article-movie-home">
+                                            <img src="https://galaxycine.vn/media/2020/6/22/450x300_1592795432576.jpg"
+                                                data-src="https://galaxycine.vn/media/2020/6/22/450x300_1592795432576.jpg"
+                                                class="lazy loaded" data-was-processed="true">
+                                            <a href="/dat-ve/tiec-trang-mau">
+                                                <div class="decription-hover overlay">
+                                                    <div class="movies-content">
+                                                        <i></i>
+                                                        <div class="group">
+                                                            <div class="btn secondary-white">mua vé</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="title-movie">
+                                            <h4 class="upper-text">Tiệc Trăng Máu</h4>
+                                            <h4 class="vn upper-text"></h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
+                                        <div class="article-movie-home">
+                                            <img src="https://galaxycine.vn/media/2020/5/22/banner-quad-blue_1590120387910.jpg"
+                                                data-src="https://galaxycine.vn/media/2020/5/22/banner-quad-blue_1590120387910.jpg"
+                                                class="lazy loaded" data-was-processed="true">
+                                            <a href="/dat-ve/the-new-mutants">
+                                                <div class="decription-hover overlay">
+                                                    <div class="movies-content">
+                                                        <i></i>
+                                                        <div class="group">
+                                                            <div class="btn secondary-white">mua vé</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="title-movie">
+                                            <h4 class="upper-text">The New Mutants</h4>
+                                            <h4 class="vn upper-text">Dị Nhân Thế Hệ Mới</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-xs-6 movie-item">
+                                        <div class="article-movie-home">
+                                            <img src="https://galaxycine.vn/media/2019/12/19/aqp2-intl-tsr-dgtl-1-sht-imax-vie---copy-2_1576723481323.jpg"
+                                                data-src="https://galaxycine.vn/media/2019/12/19/aqp2-intl-tsr-dgtl-1-sht-imax-vie---copy-2_1576723481323.jpg"
+                                                class="lazy loaded" data-was-processed="true">
+                                            <a href="/dat-ve/a-quiet-place-2">
+                                                <div class="decription-hover overlay">
+                                                    <div class="movies-content">
+                                                        <i></i>
+                                                        <div class="group">
+                                                            <div class="btn secondary-white">mua vé</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="title-movie">
+                                            <h4 class="upper-text">A Quiet Place 2</h4>
+                                            <h4 class="vn upper-text">Vùng Đất Câm Lặng 2</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12 pull-right">
+                                        <a href="/phim-sap-chieu" class="btn secondary fl-right">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <section class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-12">
+                    <div class="contact-title">
+                        GIỚI THIỆU
+                    </div>
+                    <ul>
+                        <li><a href="#">VỀ CHÚNG TÔI</a></li>
+                        <li><a href="#">THỎA THUẬN SỬ DỤNG</a></li>
+                        <li><a href="#">CHÍNH SÁCH BẢO MẬT</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="contact-title">
+                        GÓC ĐIỆN ẢNH
+                    </div>
+                    <ul>
+                        <li><a href="#">THỂ LOẠI PHIM</a></li>
+                        <li><a href="#">BÌNH LUẬN PHIM</a></li>
+                        <li><a href="#">BLOG ĐIỆN ẢNH</a></li>
+                        <li><a href="#">PHIM HAY THÁNG</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="contact-title">
+                        HỖ TRỢ
+                    </div>
+                    <ul>
+                        <li><a href="#">GÓP Ý</a></li>
+                        <li><a href="#">RẠP / GIÁ VÉ</a></li>
+                        <li><a href="#">TUYỂN DỤNG</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-12">
+                    <div class="contact-title">
+                        KẾT NỐI MOVIE STAR
+                    </div>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i>witter</a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i>Google +</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>
+                2020 © Movie Star /
+                <a href="#">Web movie design by ...</a>
+            </p>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
